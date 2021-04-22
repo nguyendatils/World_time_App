@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59a9bdf1-b4aa-486b-aeeb-7ba93483c21d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ProjectId" id="1rVrbB8CafTDE4WmnaiPDNUiH1y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59a9bdf1-b4aa-486b-aeeb-7ba93483c21d" name="Default Changelist" comment="" />
+      <created>1619072166543</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619072166543</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619084275729">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1619084275729" />
+    <state x="275" y="204" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1619084238712">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="275" y="204" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1619084238712" />
+    <state x="313" y="169" key="FileChooserDialogImpl" timestamp="1619083915526">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="313" y="169" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1619083915526" />
+    <state width="1004" height="209" key="GridCell.Tab.0.bottom" timestamp="1619084442641">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1004" height="209" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619084442641" />
+    <state width="1004" height="209" key="GridCell.Tab.0.center" timestamp="1619084442641">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1004" height="209" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1619084442641" />
+    <state width="1004" height="209" key="GridCell.Tab.0.left" timestamp="1619084442641">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1004" height="209" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1619084442641" />
+    <state width="1004" height="209" key="GridCell.Tab.0.right" timestamp="1619084442641">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1004" height="209" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1619084442641" />
+    <state x="41" y="59" key="SettingsEditor" timestamp="1619072464441">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="41" y="59" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1619072464441" />
+  </component>
+</project>
