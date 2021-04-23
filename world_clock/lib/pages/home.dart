@@ -69,8 +69,9 @@ class _HomeState extends State<Home> {
                       Text(
                         data['location'],
                         style: TextStyle(
-                            fontSize: 30.0,
+                            fontSize: 20.0,
                             letterSpacing: 2.0,
+                          fontFamily: "ZenDots",
                           color: _color
                         ),
                       ),
@@ -83,8 +84,9 @@ class _HomeState extends State<Home> {
                       Text(
                         data['time'],
                         style: TextStyle(
-                            fontSize: 60.0,
+                            fontSize: 50.0,
                             letterSpacing: 2.0,
+                          fontFamily: 'ZenDots',
                           color: _color
                         ),
                       ),
