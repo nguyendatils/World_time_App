@@ -30,9 +30,6 @@ class WorldTime {
       Map data_time = jsonDecode(time_res.body);
       Map data_weather = jsonDecode(weather_res.body);
 
-      print(weather_res.body);
-      print(time_res.body);
-
       //get data properties
       String datetime = data_time['datetime'];
       String offset = data_time['utc_offset'].substring(0,3);
@@ -47,9 +44,7 @@ class WorldTime {
 
       //set weather
       temperature = data_weather['current']['temperature'].toString();
-      // print(temperature);
       weather = data_weather['current']['weather_descriptions'][0];
-      // print(weather);
     }
     catch (e) {
       print('catch error: $e');
