@@ -41,6 +41,8 @@ class _HomeState extends State<Home> {
                             'time': result['time'],
                             'flag': result['flag'],
                             'isDayTime': result['isDayTime'],
+                            'temperature': result['temperature'],
+                            'weather': result['weather'],
                           };
                         });
                       },
@@ -78,19 +80,50 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                   SizedBox(height: 40.0,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        data['time'],
-                        style: TextStyle(
-                            fontSize: 50.0,
-                            letterSpacing: 2.0,
-                          fontFamily: 'ZenDots',
-                          color: _color
+                  Text(
+                    data['time'],
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        letterSpacing: 2.0,
+                        fontFamily: 'ZenDots',
+                        color: _color
+                    ),
+                  ),
+                  SizedBox(height: 20,),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(50, 0, 50, 0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              '${data['temperature']}° C',
+                              style: TextStyle(
+                                  fontSize: 20.0,
+                                  letterSpacing: 2.0,
+                                  fontFamily: 'ZenDots',
+                                  color: _color
+                              ),
+                            ),
+                          ]
                         ),
-                      ),
-                    ],
+                        Column(
+                          children: [
+                            Text(
+                              data['weather'],
+                              style: TextStyle(
+                                  fontSize: 20.0,
+                                  letterSpacing: 2.0,
+                                  fontFamily: 'ZenDots',
+                                  color: _color
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),

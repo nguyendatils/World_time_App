@@ -5,13 +5,17 @@ import 'package:intl/intl.dart';
 class WorldTime {
 
   String location;
+  String city;
   String time;
   String flag;
   String url;
+  String temperature;
+  String weather;
   bool isDayTime;
 
-  WorldTime(String location, String flag, String url){
+  WorldTime(String location, String city, String flag, String url){
     this.location = location;
+    this.city = city;
     this.flag = flag;
     this.url = url;
   }
@@ -20,12 +24,18 @@ class WorldTime {
 
     try{
       //make request
-      Response response = await get('http://worldtimeapi.org/api/timezone/$url');
-      Map data = jsonDecode(response.body);
+      Response time_res = await get('http://worldtimeapi.org/api/timezone/$url');
+      Response weather_res =await get('http://api.weatherstack.com/current?access_key=85e843ca399b25614b847acfc6bef091&query=$city');
+
+      Map data_time = jsonDecode(time_res.body);
+      Map data_weather = jsonDecode(weather_res.body);
+
+      print(weather_res.body);
+      print(time_res.body);
 
       //get data properties
-      String datetime = data['datetime'];
-      String offset = data['utc_offset'].substring(0,3);
+      String datetime = data_time['datetime'];
+      String offset = data_time['utc_offset'].substring(0,3);
 
       //get time
       DateTime now = DateTime.parse(datetime);
@@ -34,10 +44,16 @@ class WorldTime {
       //set time
       isDayTime = now.hour > 6 && now.hour < 18 ? true : false;
       time = DateFormat.jm().format(now);
+
+      //set weather
+      temperature = data_weather['current']['temperature'].toString();
+      // print(temperature);
+      weather = data_weather['current']['weather_descriptions'][0];
+      // print(weather);
     }
     catch (e) {
       print('catch error: $e');
-      time='could not load';
+      // time = '00:00';
     }
 
   }

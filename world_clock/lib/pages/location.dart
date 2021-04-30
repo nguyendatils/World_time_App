@@ -9,10 +9,10 @@ class Location extends StatefulWidget {
 class _LocationState extends State<Location> {
 
   List<WorldTime> locations = [
-    WorldTime('London', 'england.png', 'Europe/London'),
-    WorldTime('Berlin', 'germany.png', 'Europe/Berlin'),
-    WorldTime('Seoul', 'korea.png', 'Asia/Seoul'),
-    WorldTime('HaNoi', 'vietnam.png', 'Asia/Ho_Chi_Minh'),
+    WorldTime('London', 'London', 'england.png', 'Europe/London'),
+    WorldTime('Berlin', 'Berlin', 'germany.png', 'Europe/Berlin'),
+    WorldTime('Seoul', 'Seoul', 'korea.png', 'Asia/Seoul'),
+    WorldTime('HaNoi', 'Ho_Chi_Minh', 'vietnam.png', 'Asia/Ho_Chi_Minh'),
   ];
 
   void updateTime(index) async {
@@ -22,7 +22,9 @@ class _LocationState extends State<Location> {
       'location': instance.location,
       'time': instance.time,
       'flag': instance.flag,
-      'isDayTime': instance.isDayTime
+      'isDayTime': instance.isDayTime,
+      'temperature': instance.temperature,
+      'weather': instance.weather,
     });
   }
 
